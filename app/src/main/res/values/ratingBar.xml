@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#D3D3D3</item>
+        <item name="colorControlActivated">#F4A900</item>
+    </style>
+</resources>

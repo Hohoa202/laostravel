@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Activity.LoginActivity">
+
+    <ImageButton
+        android:id="@+id/btn_backHome"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_margin="12dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bgr_btn_circle"
+        android:src="@drawable/ic_home"
+        android:padding="8dp"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_bgr_login"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_neo"/>
+
+    <TextView
+        android:id="@+id/btn_neo"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:text="Đăng ký thành viên"
+        android:background="@color/white"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="36dp"
+        android:background="@drawable/bgr_bottom_dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chào mừng bạn đến với"
+            android:textSize="20sp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Laos Travel"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="32dp">
+
+            <EditText
+                android:id="@+id/login_ed_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bgr_edit_text"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="8dp"
+                android:hint="Địa chỉ email"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="50"
+                android:nextFocusDown="@+id/login_ed_password"
+                android:singleLine="true"
+                android:textColor="@color/txt_main"
+                android:textColorHint="@color/txt_light"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/login_ed_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bgr_edit_text"
+                android:drawableStart="@drawable/ic_key"
+                android:drawablePadding="8dp"
+                android:hint="Mật khẩu"
+                android:textSize="16sp"
+                android:textColor="@color/txt_main"
+                android:textColorHint="@color/txt_light"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btn_handle_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="14dp"
+                android:textSize="18dp"
+                android:singleLine="true"
+                android:backgroundTint="@color/btn_main"
+                android:textColor="@color/white"
+                android:text="Đăng nhập"/>
+
+            <TextView
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="Đăng ký thành viên"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="20dp"
+                android:textSize="14sp"
+                android:textColor="@color/txt_active"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

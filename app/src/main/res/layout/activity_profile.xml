@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgr_main">
+
+    <ImageView
+        android:id="@+id/btnClose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/bgr_btn_circle"
+        android:elevation="3dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/boxImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="60dp"
+            app:cardCornerRadius="85dp"
+            app:layout_constraintBottom_toBottomOf="parent "
+            app:layout_constraintCircleRadius="55dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imgUser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_no_avt" />
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/smallImage"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bgr_btn_circle"
+            android:elevation="2dp"
+            android:padding="6dp"
+            android:src="@drawable/ic_camera"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bgr_bottom_dialog"
+        android:gravity="center"
+        android:layout_marginTop="48dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boxImg"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/update_fullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bgr_edit_text"
+                android:drawableStart="@drawable/ic_card"
+                android:drawablePadding="8dp"
+                android:hint="Họ và tên"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@+id/register_email"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="@color/txt_light" />
+
+            <EditText
+                android:id="@+id/update_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bgr_edit_text_readonly"
+                android:clickable="false"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="8dp"
+                android:focusable="false"
+                android:hint="Địa chỉ email"
+                android:imeOptions="actionNext"
+                android:longClickable="true"
+                android:nextFocusDown="@+id/register_phone"
+                android:singleLine="true"
+                android:textColor="#717171"
+                android:textColorHint="#717171" />
+
+            <EditText
+                android:id="@+id/update_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bgr_edit_text_readonly"
+                android:clickable="false"
+                android:drawableStart="@drawable/ic_call"
+                android:drawablePadding="8dp"
+                android:focusable="false"
+                android:hint="Số điện thoại"
+                android:imeOptions="actionNext"
+                android:longClickable="true"
+                android:nextFocusDown="@+id/register_password"
+                android:singleLine="true"
+                android:textColor="#717171"
+                android:textColorHint="#717171" />
+
+            <EditText
+                android:id="@+id/update_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bgr_edit_text"
+                android:drawableStart="@drawable/ic_address"
+                android:drawablePadding="8dp"
+                android:hint="Địa chỉ"
+                android:imeOptions="actionDone"
+                android:nextFocusDown="@+id/register_password"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="@color/txt_light"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/btn_main"
+                android:padding="14dp"
+                android:singleLine="true"
+                android:text="Cập nhật"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

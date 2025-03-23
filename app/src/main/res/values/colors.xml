@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Base color  -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--  Button color  -->
+    <color name="btn_main">#3952D5</color>
+    <color name="btn_second">#FEF7E5</color>
+
+    <!--  Background color  -->
+    <color name="bgr_main">#FAFAFF</color>
+    <color name="bgr_header">#397AC3</color>
+    <color name="bgr_danger">#F7C0CF</color>
+    <color name="bgr_input">#F6F6F8</color>
+
+    <!--  Text color  -->
+    <color name="txt_main">#3B394A</color>
+    <color name="txt_danger">#E10000</color>
+    <color name="txt_active">#0057A7</color>
+    <color name="txt_light">#717086</color>
+    <color name="txt_btn_second">#D37C1D</color>
+
+    <!--  Icon color  -->
+    <color name="ic_main">#717086</color>
+    <color name="ic_active">#0057A7</color>
+    <color name="ic_star">#FFE500</color>
+
+    <!--  Label color  -->
+    <color name="warning_text">#856404</color>
+    <color name="warning_bgr">#feedbb</color>
+    <color name="warning_border">#fae7ad</color>
+
+    <color name="success_text">#155724</color>
+    <color name="success_bgr">#d4edda</color>
+    <color name="success_border">#c3e6cb</color>
+
+    <color name="info_text">#004085</color>
+    <color name="info_bgr">#cce5ff</color>
+    <color name="info_border">#b8daff</color>
+
+    <color name="danger_text">#721c24</color>
+    <color name="danger_bgr">#f8d7da</color>
+    <color name="danger_border">#f5c6cb</color>
+
+    <!--  Border main color  -->
+    <color name="border">#D9D9D9</color>
+</resources>

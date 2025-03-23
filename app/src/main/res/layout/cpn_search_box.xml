@@ -1,0 +1,21 @@
+<!-- search_box.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/box"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+    <EditText
+        android:id="@+id/edSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập nội dung cần tìm"
+        android:textColor="@color/txt_main"
+        android:textColorHint="@color/txt_light"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="8dp"
+        android:textSize="14sp"
+        android:inputType="text"
+        android:background="@drawable/bgr_box"
+        android:padding="12dp"/>
+</LinearLayout>
